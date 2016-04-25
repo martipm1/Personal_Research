@@ -60,6 +60,9 @@
     <ClCompile Include="GameScene.cpp">
       <Filter>Scenes</Filter>
     </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>InputManager</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="j1App.h" />
@@ -138,6 +141,9 @@
     <ClInclude Include="GameScene.h">
       <Filter>Scenes</Filter>
     </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>InputManager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="UI">
@@ -154,6 +160,9 @@
     </Filter>
     <Filter Include="Scenes">
       <UniqueIdentifier>{627172bc-a652-4ef3-8867-45fd7dfa0aff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputManager">
+      <UniqueIdentifier>{99ab8328-dff7-40a0-b9b9-d885a0285e92}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

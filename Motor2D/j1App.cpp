@@ -16,6 +16,7 @@
 #include "j1App.h"
 #include "GameScene.h"
 #include "TacticalAI.h"
+#include "InputManager.h"
 
 
 // Constructor
@@ -33,6 +34,7 @@ j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
 	font = new j1Fonts();
 	ui = new j1UIManager();
 	game_scene = new GameScene();
+	input_manager = new InputManager();
 
 	// Ordered for awake / Start / Update
 	// Reverse order of CleanUp
@@ -43,6 +45,7 @@ j1App::j1App(int argc, char* args[]) : argc(argc), args(args)
 	AddModule(audio);
 	AddModule(map);
 	AddModule(font);
+	AddModule(input_manager);
 
 	// scene last
 	//AddModule(scene); //This scene is ONLY for testing stuff (DISABLE FOR FINAL GAME)
