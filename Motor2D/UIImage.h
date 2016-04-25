@@ -1,0 +1,28 @@
+#ifndef __UIIMAGE_H__
+#define __UIIMAGE_H__
+
+#include "UIEntity.h"
+struct SDL_Texture;
+
+class UIImage : public UIEntity
+{
+public:
+
+	UIImage();
+
+	UIImage(SDL_Rect section, const int x, const int y);
+
+	// Destructor
+	virtual ~UIImage();
+
+	bool Update(float dt);
+
+	// Called before quitting
+	bool CleanUp();
+
+private:
+	SDL_Rect section;
+
+};
+
+#endif

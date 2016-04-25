@@ -1,0 +1,864 @@
+<units>
+  <invisibility cost="7"/>
+  <snipper cost="40"/>
+  
+  <unit TYPE="MARINE">
+    <texture_path value="sprites/blue_marine.png"/>
+    <auxiliar_texture value="sprites/red_marine.png"/>
+    <width value="24" />
+    <height value="32" />
+    <life value="100" />
+    <speed value="100" />
+    <damage value="10" />
+    <vision value="180" />
+    <range value="80" />
+    <cool value="1" />
+    <collider width="15" height="15"/>
+    <abilities value="false"/>
+    <mana value="100" />
+    <mana_regen value="5" />
+    <up>
+      <rect x="20" y="271"/>
+      <rect x="20" y="336"/>
+      <rect x="20" y="399"/>
+      <rect x="20" y="462"/>
+      <rect x="20" y="527"/>
+      <rect x="20" y="592"/>
+      <rect x="20" y="657"/>
+      <rect x="20" y="720"/>
+      <rect x="20" y="784"/>
+    </up>
+    <down>
+      <rect x="1043" y="271"/>
+      <rect x="1043" y="336"/>
+      <rect x="1043" y="399"/>
+      <rect x="1043" y="462"/>
+      <rect x="1043" y="527"/>
+      <rect x="1043" y="592"/>
+      <rect x="1043" y="657"/>
+      <rect x="1043" y="720"/>
+      <rect x="1043" y="784"/>
+    </down>
+    <right>
+      <rect x="532" y="271"/>
+      <rect x="532" y="336"/>
+      <rect x="532" y="399"/>
+      <rect x="532" y="462"/>
+      <rect x="532" y="527"/>
+      <rect x="532" y="592"/>
+      <rect x="532" y="657"/>
+      <rect x="532" y="720"/>
+      <rect x="532" y="784"/>
+    </right>
+    <left>
+      <rect x="595" y="271"/>
+      <rect x="595" y="336"/>
+      <rect x="595" y="399"/>
+      <rect x="595" y="462"/>
+      <rect x="595" y="527"/>
+      <rect x="595" y="592"/>
+      <rect x="595" y="657"/>
+      <rect x="595" y="720"/>
+      <rect x="595" y="784"/>
+    </left>
+    <upright>
+      <rect x="277" y="271"/>
+      <rect x="277" y="336"/>
+      <rect x="277" y="399"/>
+      <rect x="277" y="462"/>
+      <rect x="277" y="527"/>
+      <rect x="277" y="592"/>
+      <rect x="277" y="657"/>
+      <rect x="277" y="720"/>
+      <rect x="277" y="784"/>
+    </upright>
+    <downright>
+      <rect x="790" y="271"/>
+      <rect x="790" y="336"/>
+      <rect x="790" y="399"/>
+      <rect x="790" y="462"/>
+      <rect x="790" y="527"/>
+      <rect x="790" y="592"/>
+      <rect x="790" y="657"/>
+      <rect x="790" y="720"/>
+      <rect x="790" y="784"/>
+    </downright>
+    <upleft>
+      <rect x="339" y="271"/>
+      <rect x="339" y="336"/>
+      <rect x="339" y="399"/>
+      <rect x="339" y="462"/>
+      <rect x="339" y="527"/>
+      <rect x="339" y="592"/>
+      <rect x="339" y="657"/>
+      <rect x="339" y="720"/>
+      <rect x="339" y="784"/>
+    </upleft>
+    <downleft>
+      <rect x="852" y="271"/>
+      <rect x="852" y="336"/>
+      <rect x="852" y="399"/>
+      <rect x="852" y="462"/>
+      <rect x="852" y="527"/>
+      <rect x="852" y="592"/>
+      <rect x="852" y="657"/>
+      <rect x="852" y="720"/>
+      <rect x="852" y="784"/>
+    </downleft>
+    
+    <iup>
+      <rect x="20" y="13"/>
+      <rect x="20" y="77"/>
+    </iup>
+    <idown>
+      <rect x="1043" y="13"/>
+      <rect x="1043" y="77"/>
+    </idown>
+    <iright>
+      <rect x="532" y="13"/>
+      <rect x="532" y="77"/>
+    </iright>
+    <ileft>
+      <rect x="595" y="13"/>
+      <rect x="595" y="77"/>
+    </ileft>
+    <iupright>
+      <rect x="277" y="13"/>
+      <rect x="277" y="77"/>
+    </iupright>
+    <idownright>
+      <rect x="790" y="13"/>
+      <rect x="790" y="77"/>
+    </idownright>
+    <iupleft>
+      <rect x="339" y="13"/>
+      <rect x="339" y="77"/>
+    </iupleft>
+    <idownleft>
+      <rect x="852" y="13"/>
+      <rect x="852" y="77"/>
+    </idownleft>
+
+    <aup>
+      <rect x="20" y="141"/>
+      <rect x="20" y="205"/>
+    </aup>
+    <adown>
+      <rect x="1043" y="141"/>
+      <rect x="1043" y="205"/>
+    </adown>
+    <aright>
+      <rect x="532" y="141"/>
+      <rect x="532" y="205"/>
+    </aright>
+    <aleft>
+      <rect x="595" y="141"/>
+      <rect x="595" y="205"/>
+    </aleft>
+    <aupright>
+      <rect x="277" y="141"/>
+      <rect x="277" y="205"/>
+    </aupright>
+    <adownright>
+      <rect x="790" y="141"/>
+      <rect x="790" y="205"/>
+    </adownright>
+    <aupleft>
+      <rect x="339" y="141"/>
+      <rect x="339" y="205"/>
+    </aupleft>
+    <adownleft>
+      <rect x="852" y="141"/>
+      <rect x="852" y="205"/>
+    </adownleft>
+
+    <death>
+      <pos x="-18" y="0"/>
+      <size w="58" h="37"/>
+      <rect x="2" y="846"/>
+      <rect x="67" y="846"/>
+      <rect x="131" y="846"/>
+      <rect x="196" y="846"/>
+      <rect x="257" y="846"/>
+      <rect x="321" y="846"/>
+      <rect x="385" y="846"/>
+      <rect x="449" y="846"/>
+    </death>
+
+    <animwalkspeed value="0.1"/>
+    <animidlespeed value="0.005"/>
+    <animattackspeed value="0.05"/>
+    <deathanimspeed value="0.05"/>
+  
+  </unit>
+
+  <unit TYPE="GHOST">
+    <texture_path value="sprites/blue_ghost.png"/>
+    <width value="24" />
+    <height value="32" />
+    <life value="100" />
+    <speed value="100" />
+    <damage value="10" />
+    <vision value="200" />
+    <range value="100" />
+    <cool value="1" />
+    <mana value="100" />
+    <mana_regen value="5" />
+    <collider width="15" height="15"/>
+    <abilities value="true">
+      <ability value="INVISIBLE" />
+      <ability value="SNIPPER" />
+    </abilities>
+<up>
+      <rect x="20" y="271"/>
+      <rect x="20" y="336"/>
+      <rect x="20" y="399"/>
+      <rect x="20" y="462"/>
+      <rect x="20" y="527"/>
+      <rect x="20" y="592"/>
+      <rect x="20" y="657"/>
+      <rect x="20" y="720"/>
+      <rect x="20" y="784"/>
+    </up>
+    <down>
+      <rect x="1043" y="271"/>
+      <rect x="1043" y="336"/>
+      <rect x="1043" y="399"/>
+      <rect x="1043" y="462"/>
+      <rect x="1043" y="527"/>
+      <rect x="1043" y="592"/>
+      <rect x="1043" y="657"/>
+      <rect x="1043" y="720"/>
+      <rect x="1043" y="784"/>
+    </down>
+    <right>
+      <rect x="532" y="271"/>
+      <rect x="532" y="336"/>
+      <rect x="532" y="399"/>
+      <rect x="532" y="462"/>
+      <rect x="532" y="527"/>
+      <rect x="532" y="592"/>
+      <rect x="532" y="657"/>
+      <rect x="532" y="720"/>
+      <rect x="532" y="784"/>
+    </right>
+    <left>
+      <rect x="595" y="271"/>
+      <rect x="595" y="336"/>
+      <rect x="595" y="399"/>
+      <rect x="595" y="462"/>
+      <rect x="595" y="527"/>
+      <rect x="595" y="592"/>
+      <rect x="595" y="657"/>
+      <rect x="595" y="720"/>
+      <rect x="595" y="784"/>
+    </left>
+    <upright>
+      <rect x="277" y="271"/>
+      <rect x="277" y="336"/>
+      <rect x="277" y="399"/>
+      <rect x="277" y="462"/>
+      <rect x="277" y="527"/>
+      <rect x="277" y="592"/>
+      <rect x="277" y="657"/>
+      <rect x="277" y="720"/>
+      <rect x="277" y="784"/>
+    </upright>
+    <downright>
+      <rect x="785" y="271"/>
+      <rect x="785" y="336"/>
+      <rect x="785" y="399"/>
+      <rect x="785" y="462"/>
+      <rect x="785" y="527"/>
+      <rect x="785" y="592"/>
+      <rect x="785" y="657"/>
+      <rect x="785" y="720"/>
+      <rect x="785" y="784"/>
+    </downright>
+    <upleft>
+      <rect x="339" y="271"/>
+      <rect x="339" y="336"/>
+      <rect x="339" y="399"/>
+      <rect x="339" y="462"/>
+      <rect x="339" y="527"/>
+      <rect x="339" y="592"/>
+      <rect x="339" y="657"/>
+      <rect x="339" y="720"/>
+      <rect x="339" y="784"/>
+    </upleft>
+    <downleft>
+      <rect x="857" y="271"/>
+      <rect x="857" y="336"/>
+      <rect x="857" y="399"/>
+      <rect x="857" y="462"/>
+      <rect x="857" y="527"/>
+      <rect x="857" y="592"/>
+      <rect x="857" y="657"/>
+      <rect x="857" y="720"/>
+      <rect x="857" y="784"/>
+    </downleft>
+    
+    <iup>
+      <rect x="20" y="13"/>
+      <rect x="20" y="77"/>
+    </iup>
+    <idown>
+      <rect x="1043" y="13"/>
+      <rect x="1043" y="77"/>
+    </idown>
+    <iright>
+      <rect x="532" y="13"/>
+      <rect x="532" y="77"/>
+    </iright>
+    <ileft>
+      <rect x="595" y="13"/>
+      <rect x="595" y="77"/>
+    </ileft>
+    <iupright>
+      <rect x="277" y="13"/>
+      <rect x="277" y="77"/>
+    </iupright>
+    <idownright>
+      <rect x="790" y="13"/>
+      <rect x="790" y="77"/>
+    </idownright>
+    <iupleft>
+      <rect x="339" y="13"/>
+      <rect x="339" y="77"/>
+    </iupleft>
+    <idownleft>
+      <rect x="852" y="13"/>
+      <rect x="852" y="77"/>
+    </idownleft>
+
+    <aup>
+      <rect x="20" y="141"/>
+      <rect x="20" y="205"/>
+    </aup>
+    <adown>
+      <rect x="1043" y="141"/>
+      <rect x="1043" y="205"/>
+    </adown>
+    <aright>
+      <rect x="532" y="141"/>
+      <rect x="532" y="205"/>
+    </aright>
+    <aleft>
+      <rect x="595" y="141"/>
+      <rect x="595" y="205"/>
+    </aleft>
+    <aupright>
+      <rect x="277" y="141"/>
+      <rect x="277" y="205"/>
+    </aupright>
+    <adownright>
+      <rect x="790" y="141"/>
+      <rect x="790" y="205"/>
+    </adownright>
+    <aupleft>
+      <rect x="339" y="141"/>
+      <rect x="339" y="205"/>
+    </aupleft>
+    <adownleft>
+      <rect x="852" y="141"/>
+      <rect x="852" y="205"/>
+    </adownleft>
+
+    <death>
+      <pos x="-18" y="0"/>
+      <size w="58" h="37"/>
+      <rect x="2" y="846"/>
+      <rect x="67" y="846"/>
+      <rect x="131" y="846"/>
+      <rect x="196" y="846"/>
+      <rect x="257" y="846"/>
+      <rect x="321" y="846"/>
+      <rect x="385" y="846"/>
+      <rect x="449" y="846"/>
+    </death>
+    <deathanimspeed value="0.05"/>
+
+    <animwalkspeed value="0.1"/>
+    <animidlespeed value="0.005"/>
+    <animattackspeed value="0.05"/>
+  </unit>
+
+<unit TYPE="FIREBAT">
+    <texture_path value="sprites/firebat.png"/>
+    <width value="24" />
+    <height value="32" />
+    <life value="100" />
+    <speed value="100" />
+    <damage value="10" />
+    <vision value="180" />
+    <range value="50" />
+    <cool value="1" />
+    <collider width="15" height="15"/>
+    <mana value="100" />
+    <mana_regen value="5" />
+  <abilities value="false"/>
+    <up>
+      <rect x="5" y="68"/>
+      <rect x="5" y="100"/>
+      <rect x="5" y="132"/>
+      <rect x="5" y="164"/>
+      <rect x="5" y="196"/>
+      <rect x="5" y="227"/>
+      
+    </up>
+    <down>
+      <rect x="517" y="65"/>
+      <rect x="517" y="97"/>
+      <rect x="517" y="128"/>
+      <rect x="517" y="160"/>
+      <rect x="517" y="192"/>
+      <rect x="517" y="224"/>
+      <rect x="517" y="256"/>
+      <rect x="517" y="289"/>
+    </down>
+    <right>
+      <rect x="358" y="65"/>
+      <rect x="358" y="96"/>
+      <rect x="358" y="128"/>
+      <rect x="358" y="160"/>
+      <rect x="358" y="191"/>
+      <rect x="358" y="224"/>
+      <rect x="358" y="256"/>
+      <rect x="358" y="289"/>
+    </right>
+    <left>
+      <rect x="558" y="65"/>
+      <rect x="558" y="96"/>
+      <rect x="558" y="128"/>
+      <rect x="558" y="160"/>
+      <rect x="558" y="191"/>
+      <rect x="558" y="224"/>
+      <rect x="558" y="256"/>
+      <rect x="558" y="289"/>
+    </left>
+    <upright>
+      <rect x="198" y="66"/>
+      <rect x="198" y="99"/>
+      <rect x="198" y="130"/>
+      <rect x="198" y="161"/>
+      <rect x="198" y="194"/>
+      <rect x="198" y="226"/>
+      <rect x="198" y="258"/>
+      <rect x="198" y="291"/>
+    </upright>
+    <downright>
+      <rect x="421" y="64"/>
+      <rect x="421" y="96"/>
+      <rect x="421" y="128"/>
+      <rect x="421" y="161"/>
+      <rect x="421" y="192"/>
+      <rect x="421" y="224"/>
+      <rect x="421" y="256"/>
+      <rect x="421" y="287"/>
+    </downright>
+    <upleft>
+      <rect x="587" y="66"/>
+      <rect x="587" y="99"/>
+      <rect x="587" y="130"/>
+      <rect x="587" y="161"/>
+      <rect x="587" y="194"/>
+      <rect x="587" y="226"/>
+      <rect x="587" y="258"/>
+      <rect x="587" y="291"/>
+    </upleft>
+    <downleft>
+      <rect x="619" y="64"/>
+      <rect x="619" y="96"/>
+      <rect x="619" y="128"/>
+      <rect x="619" y="161"/>
+      <rect x="619" y="192"/>
+      <rect x="619" y="224"/>
+      <rect x="619" y="256"/>
+      <rect x="619" y="287"/>
+    </downleft>
+    
+    <iup>
+      <rect x="5" y="1"/>
+      <rect x="5" y="33"/>
+    </iup>
+    <idown>
+      <rect x="515" y="2"/>
+      <rect x="515" y="64"/>
+    </idown>
+    <iright>
+      <rect x="232" y="2"/>
+      <rect x="297" y="2"/>
+    </iright>
+    <ileft>
+      <rect x="558" y="64"/>
+      <rect x="558" y="97"/>
+    </ileft>
+
+    <animwalkspeed value="0.1"/>
+    <animidlespeed value="0.005"/>
+    <animattackspeed value="0.05"/>
+
+    <projectile>
+      <path value="sprites/firebat_attack.png"/>
+      <width value="80"/>
+      <height value="71"/>
+      <anim_speed value="0.1"/>
+      <up>
+        <pos x="-20" y="-60"/>
+        <rect x="1" y="1"/>
+        <rect x="1" y="73"/>
+        <rect x="1" y="145"/>
+        <rect x="1" y="217"/>
+        <rect x="1" y="289"/>
+        <rect x="1" y="361"/>
+        <rect x="1" y="433"/>
+        <rect x="1" y="505"/>
+        <rect x="1" y="577"/>
+        <rect x="1" y="649"/>
+        <rect x="1" y="721"/>
+        <rect x="1" y="793"/>
+        <rect x="1" y="865"/>
+      </up>
+      <down>
+        <pos x="-20" y="18"/>
+        <rect x="82" y="1"/>
+        <rect x="82" y="73"/>
+        <rect x="82" y="145"/>
+        <rect x="82" y="217"/>
+        <rect x="82" y="289"/>
+        <rect x="82" y="361"/>
+        <rect x="82" y="433"/>
+        <rect x="82" y="505"/>
+        <rect x="82" y="577"/>
+        <rect x="82" y="649"/>
+        <rect x="82" y="721"/>
+        <rect x="82" y="793"/>
+        <rect x="82" y="865"/>
+      </down>
+      <right>
+        <pos x="30" y="-20"/>
+        <rect x="163" y="1"/>
+        <rect x="163" y="73"/>
+        <rect x="163" y="145"/>
+        <rect x="163" y="217"/>
+        <rect x="163" y="289"/>
+        <rect x="163" y="361"/>
+        <rect x="163" y="433"/>
+        <rect x="163" y="505"/>
+        <rect x="163" y="577"/>
+        <rect x="163" y="649"/>
+        <rect x="163" y="721"/>
+        <rect x="163" y="793"/>
+        <rect x="163" y="865"/>
+      </right>
+      <left>
+        <pos x="-70" y="-20"/>
+        <rect x="244" y="1"/>
+        <rect x="244" y="73"/>
+        <rect x="244" y="145"/>
+        <rect x="244" y="217"/>
+        <rect x="244" y="289"/>
+        <rect x="244" y="361"/>
+        <rect x="244" y="433"/>
+        <rect x="244" y="505"/>
+        <rect x="244" y="577"/>
+        <rect x="244" y="649"/>
+        <rect x="244" y="721"/>
+        <rect x="244" y="793"/>
+        <rect x="244" y="865"/>
+      </left>
+      <upright>
+        <pos x="15" y="-55"/>
+        <rect x="325" y="1"/>
+        <rect x="325" y="73"/>
+        <rect x="325" y="145"/>
+        <rect x="325" y="217"/>
+        <rect x="325" y="289"/>
+        <rect x="325" y="361"/>
+        <rect x="325" y="433"/>
+        <rect x="325" y="505"/>
+        <rect x="325" y="577"/>
+        <rect x="325" y="649"/>
+        <rect x="325" y="721"/>
+        <rect x="325" y="793"/>
+        <rect x="325" y="865"/>
+      </upright>
+      <downright>
+        <pos x="15" y="15"/>
+        <rect x="487" y="1"/>
+        <rect x="487" y="73"/>
+        <rect x="487" y="145"/>
+        <rect x="487" y="217"/>
+        <rect x="487" y="289"/>
+        <rect x="487" y="361"/>
+        <rect x="487" y="433"/>
+        <rect x="487" y="505"/>
+        <rect x="487" y="577"/>
+        <rect x="487" y="649"/>
+        <rect x="487" y="721"/>
+        <rect x="487" y="793"/>
+        <rect x="487" y="865"/>
+      </downright>
+      <upleft>
+        <pos x="-65" y="-55"/>
+        <rect x="406" y="1"/>
+        <rect x="406" y="73"/>
+        <rect x="406" y="145"/>
+        <rect x="406" y="217"/>
+        <rect x="406" y="289"/>
+        <rect x="406" y="361"/>
+        <rect x="406" y="433"/>
+        <rect x="406" y="505"/>
+        <rect x="406" y="577"/>
+        <rect x="406" y="649"/>
+        <rect x="406" y="721"/>
+        <rect x="406" y="793"/>
+        <rect x="406" y="865"/>
+      </upleft>
+      <downleft>
+        <pos x="-65" y="15"/>
+        <rect x="568" y="1"/>
+        <rect x="568" y="73"/>
+        <rect x="568" y="145"/>
+        <rect x="568" y="217"/>
+        <rect x="568" y="289"/>
+        <rect x="568" y="361"/>
+        <rect x="568" y="433"/>
+        <rect x="568" y="505"/>
+        <rect x="568" y="577"/>
+        <rect x="568" y="649"/>
+        <rect x="568" y="721"/>
+        <rect x="568" y="793"/>
+        <rect x="568" y="865"/>
+      </downleft>
+    </projectile>
+  
+  </unit>
+  
+
+<unit TYPE="OBSERVER">
+    <texture_path value="sprites/observer.png"/>
+    <width value="40" />
+    <height value="40" />
+    <life value="100" />
+    <speed value="100" />
+    <damage value="0" />
+    <vision value="180" />
+    <range value="50" />
+    <cool value="1" />
+    <mana value="100" />
+    <mana_regen value="5" />
+    <up>
+      <rect x="0" y="0"/>   
+    </up>
+    <down>
+      <rect x="560" y="0"/>
+    </down>
+    <right>
+      <rect x="280" y="0"/>
+    </right>
+    <left>
+      <rect x="280" y="40"/>
+    </left>
+    <upright>
+      <rect x="120" y="0"/>
+    </upright>
+    <downright>
+      <rect x="440" y="0"/>
+    </downright>
+    <upleft>
+      <rect x="120" y="40"/>
+    </upleft>
+    <downleft>
+      <rect x="440" y="40"/>
+    </downleft>
+
+    <animwalkspeed value="0.1"/>
+
+    
+  </unit>
+
+  <unit TYPE="MEDIC">
+    <texture_path value="sprites/blue_medic.png"/>
+    <width value="24" />
+    <height value="32" />
+    <life value="100" />
+    <speed value="100" />
+    <damage value="10" />
+    <vision value="180" />
+    <range value="80" />
+    <cool value="1" />
+    <collider width="15" height="15"/>
+    <mana value="100" />
+    <mana_regen value="5" />
+    <abilities value="false"/>
+    <up>
+      
+      <rect x="20" y="399"/>
+      <rect x="20" y="462"/>
+      <rect x="20" y="527"/>
+      <rect x="20" y="592"/>
+      <rect x="20" y="657"/>
+      <rect x="20" y="720"/>
+      <rect x="20" y="784"/>
+    </up>
+    <down>
+     
+      <rect x="1043" y="399"/>
+      <rect x="1043" y="462"/>
+      <rect x="1043" y="527"/>
+      <rect x="1043" y="592"/>
+      <rect x="1043" y="657"/>
+      <rect x="1043" y="720"/>
+      <rect x="1043" y="784"/>
+    </down>
+    <right>
+      
+      <rect x="532" y="399"/>
+      <rect x="532" y="462"/>
+      <rect x="532" y="527"/>
+      <rect x="532" y="592"/>
+      <rect x="532" y="657"/>
+      <rect x="532" y="720"/>
+      <rect x="532" y="784"/>
+    </right>
+    <left>
+      
+      <rect x="595" y="399"/>
+      <rect x="595" y="462"/>
+      <rect x="595" y="527"/>
+      <rect x="595" y="592"/>
+      <rect x="595" y="657"/>
+      <rect x="595" y="720"/>
+      <rect x="595" y="784"/>
+    </left>
+    <upright>
+     
+      <rect x="277" y="399"/>
+      <rect x="277" y="462"/>
+      <rect x="277" y="527"/>
+      <rect x="277" y="592"/>
+      <rect x="277" y="657"/>
+      <rect x="277" y="720"/>
+      <rect x="277" y="784"/>
+    </upright>
+    <downright>
+     
+      <rect x="785" y="399"/>
+      <rect x="785" y="462"/>
+      <rect x="785" y="527"/>
+      <rect x="785" y="592"/>
+      <rect x="785" y="657"/>
+      <rect x="785" y="720"/>
+      <rect x="785" y="784"/>
+    </downright>
+    <upleft>
+      
+      <rect x="339" y="399"/>
+      <rect x="339" y="462"/>
+      <rect x="339" y="527"/>
+      <rect x="339" y="592"/>
+      <rect x="339" y="657"/>
+      <rect x="339" y="720"/>
+      <rect x="339" y="784"/>
+    </upleft>
+    <downleft>
+      
+      <rect x="857" y="399"/>
+      <rect x="857" y="462"/>
+      <rect x="857" y="527"/>
+      <rect x="857" y="592"/>
+      <rect x="857" y="657"/>
+      <rect x="857" y="720"/>
+      <rect x="857" y="784"/>
+    </downleft>
+
+    <iup>
+      <rect x="20" y="13"/>
+      <rect x="20" y="77"/>
+    </iup>
+    <idown>
+      <rect x="1043" y="13"/>
+      <rect x="1043" y="77"/>
+    </idown>
+    <iright>
+      <rect x="532" y="13"/>
+      <rect x="532" y="77"/>
+    </iright>
+    <ileft>
+      <rect x="595" y="13"/>
+      <rect x="595" y="77"/>
+    </ileft>
+    <iupright>
+      <rect x="277" y="13"/>
+      <rect x="277" y="77"/>
+    </iupright>
+    <idownright>
+      <rect x="790" y="13"/>
+      <rect x="790" y="77"/>
+    </idownright>
+    <iupleft>
+      <rect x="339" y="13"/>
+      <rect x="339" y="77"/>
+    </iupleft>
+    <idownleft>
+      <rect x="852" y="13"/>
+      <rect x="852" y="77"/>
+    </idownleft>
+
+    <aup>
+      
+      <rect x="20" y="205"/>
+      <rect x="20" y="271"/>
+      <rect x="20" y="336"/>
+    </aup>
+    <adown>
+     
+      <rect x="1043" y="205"/>
+      <rect x="1043" y="271"/>
+      <rect x="1043" y="336"/>
+    </adown>
+    <aright>
+      
+      <rect x="532" y="205"/>
+      <rect x="532" y="271"/>
+      <rect x="532" y="336"/>
+    </aright>
+    <aleft>
+     
+      <rect x="595" y="205"/>
+      <rect x="595" y="271"/>
+      <rect x="595" y="336"/>
+    </aleft>
+    <aupright>
+ 
+      <rect x="277" y="205"/>
+      <rect x="277" y="271"/>
+      <rect x="277" y="336"/>
+    </aupright>
+    <adownright>
+     
+      <rect x="790" y="205"/>
+      <rect x="785" y="271"/>
+      <rect x="785" y="336"/>
+    </adownright>
+    <aupleft>
+     
+      <rect x="339" y="205"/>
+      <rect x="339" y="271"/>
+      <rect x="339" y="336"/>
+    </aupleft>
+    <adownleft>
+      
+      <rect x="852" y="205"/>
+      <rect x="857" y="271"/>
+      <rect x="857" y="336"/>
+    </adownleft>
+
+    <animwalkspeed value="0.1"/>
+    <animidlespeed value="0.005"/>
+    <animattackspeed value="0.05"/>
+
+  </unit>
+
+</units>
