@@ -9,6 +9,7 @@
 #include "j1Map.h"
 #include "GameScene.h"
 #include "j1UIManager.h"
+#include "InputManager.h"
 
 GameScene::GameScene() : j1Module()
 {
@@ -75,6 +76,9 @@ bool GameScene::Update(float dt)
 	if (App->input->GetKey(SDL_SCANCODE_P) == KEY_DOWN)
 		game_paused = !game_paused;
 
+	//TODO: iterar i comprovar shortcut necessari
+	if (App->input_manager->shortcuts_list.front()->active)
+		App->render->camera.x -= 5;
 
 	return true;
 }

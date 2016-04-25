@@ -1,9 +1,29 @@
 <inputs_data>
 
+  <!-- COMMANDS MUST BE CAPS -->
+  
   <shortcut>
     <TYPE value = "DOWN"/>
-    <name value ="select_units"/>
+    <name value ="camera_right"/>
+    <command value ="D"/>
+  </shortcut>
+
+  <shortcut>
+    <TYPE value = "DOWN"/>
+    <name value ="camera_left"/>
     <command value ="A"/>
+  </shortcut>
+
+  <shortcut>
+    <TYPE value = "DOWN"/>
+    <name value ="camera_up"/>
+    <command value ="W"/>
+  </shortcut>
+
+  <shortcut>
+    <TYPE value = "DOWN"/>
+    <name value ="camera_down"/>
+    <command value ="S"/>
   </shortcut>
 
 </inputs_data>
