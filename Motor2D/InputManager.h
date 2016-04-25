@@ -63,6 +63,7 @@ public:
 public:
 	list<ShortCut*>			shortcuts_list;
 	//queue, guarda inputs
+	queue<const char*>		input_queue;
 
 	string					inputs_file_path;
 };

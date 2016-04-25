@@ -3,6 +3,7 @@
 #include "p2Defs.h"
 #include "p2Log.h"
 #include "j1FileSystem.h"
+#include "j1Input.h"
 
 InputManager::InputManager(): j1Module()
 {
@@ -46,7 +47,21 @@ bool InputManager::Update(float dt)
 {
 	bool ret = true;
 
-	//Guardar inputs a queue;
+	while (!input_queue.empty())
+		input_queue.pop();
+
+	//TODO: Save inputs inside queue
+	const Uint8* keys = SDL_GetKeyboardState(NULL);
+	
+	for (int i = 0; i < MAX_KEYS; i++)
+	{
+		if (keys[i] == 1)
+		{
+			SDL_Scancode state = (SDL_Scancode)i;
+
+			input_queue.push(SDL_GetScancodeName(state));
+		}
+	}
 
 	return ret;
 }
@@ -56,7 +71,15 @@ bool InputManager::PostUpdate()
 {
 	bool ret = true;
 
-	//Set active = true a shortcuts que coincideixin amb el contingut de la queue
+	//TODO: Set active = true a shortcuts que coincideixin amb el contingut de la queue
+	if (!input_queue.empty())
+	{
+		//iterar tota la queue i fer la comprovació amb cada shortcut
+		//shortcut->command ha d'estar en MAJÚSCULA
+		if (input_queue.front() == shortcuts_list.front()->command)
+				shortcuts_list.front()->active = true;
+	}
+	
 
 	return ret;
 }
@@ -74,6 +97,8 @@ bool InputManager::CleanUp()
 bool InputManager::LoadShortcutsInfo()
 {
 	bool ret = true;
+
+	//TODO: Load shortcuts info
 
 	pugi::xml_document	shortcuts_file;
 	pugi::xml_node		shortcut;
