@@ -16,6 +16,9 @@ enum INPUT_TYPE
 
 struct ShortCut
 {
+	ShortCut()
+	{}
+
 	ShortCut(INPUT_TYPE _type, string _name, string _command)
 	{
 		type = _type;
@@ -31,6 +34,8 @@ struct ShortCut
 
 class InputManager: public j1Module
 {
+public:
+
 	InputManager();
 
 	// Destructor
@@ -53,9 +58,13 @@ class InputManager: public j1Module
 	// Called before quitting
 	bool CleanUp();
 
+	bool LoadShortcutsInfo();
+
 public:
 	list<ShortCut*>			shortcuts_list;
 	//queue, guarda inputs
+
+	string					inputs_file_path;
 };
 
 #endif // __INPUT_MANAGER_H__

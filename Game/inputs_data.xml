@@ -1,30 +1,9 @@
 <inputs_data>
 
   <shortcut>
-    <TYPE value = "down"/>
+    <TYPE value = "DOWN"/>
     <name value ="select_units"/>
-    <command>
-      <com value ="a"/>
-      <com value ="b"/>
-    </command>
-  </shortcut>
-
-  <shortcut>
-    <TYPE value = "up"/>
-    <name value ="select_units"/>
-    <command>
-      <com value ="a"/>
-      <com value ="b"/>
-    </command>
-  </shortcut>
-
-  <shortcut>
-    <TYPE value = "repeat"/>
-    <name value ="select_units"/>
-    <command>
-      <com value ="a"/>
-      <com value ="b"/>
-    </command>
+    <command value ="a"/>
   </shortcut>
 
 </inputs_data>

@@ -2,7 +2,7 @@
 
 <config>
   <app framerate_cap="">
-    <title>Starcraft Commandos</title>
+    <title>Personal Research</title>
     <organization>SheepnDreams</organization>
   </app>
 	
@@ -17,7 +17,6 @@
 
   <gui>
     <atlas file="gui/atlas.png"/>
-    <gui_data value="gui_data.xml"/>
   </gui>
     
   <window>
@@ -36,8 +35,7 @@
     <folder>maps/</folder>
   </map>
 
-  <entity_manager>
-    <units_path value="units_data.xml"/>
-  </entity_manager>
-
+  <input_manager>
+    <shortcuts_path value="inputs_data.xml"/>
+  </input_manager>
 </config>
