@@ -3,7 +3,7 @@
   <shortcut>
     <TYPE value = "DOWN"/>
     <name value ="select_units"/>
-    <command value ="a"/>
+    <command value ="A"/>
   </shortcut>
 
 </inputs_data>
