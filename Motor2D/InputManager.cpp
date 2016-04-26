@@ -40,28 +40,49 @@ bool InputManager::PreUpdate()
 {
 	bool ret = true;
 
-	//TODO: Set active = true a shortcuts que coincideixin amb el contingut de la queue
-	if (!input_queue.empty())
+	//TODO: Set active = true els shortcuts que coincideixin amb el contingut de la queue
+	//DOWN
+	if (!App->input->down_queue.empty())
 	{
-		//iterar tota la queue i fer la comprovació amb cada shortcut
-		//shortcut->command ha d'estar en MAJÚSCULA
-		for (int i = 0; i < input_queue.size(); i++)
+		for (int i = 0; i < App->input->down_queue.size(); i++)
 		{
 			list<ShortCut*>::iterator it = shortcuts_list.begin();
-
 			while (it != shortcuts_list.end())
 			{
-				if (input_queue.front()+i == (*it)->command)
+				if (App->input->down_queue.front() + i == (*it)->command && (*it)->type == DOWN)
 					(*it)->active = true;
-
 				++it;
 			}
 		}
 	}
-
-	//TODO: buidar cua
-	while (!input_queue.empty())
-		input_queue.pop();
+	//UP
+	if (!App->input->up_queue.empty())
+	{
+		for (int i = 0; i < App->input->up_queue.size(); i++)
+		{
+			list<ShortCut*>::iterator it = shortcuts_list.begin();
+			while (it != shortcuts_list.end())
+			{
+				if (App->input->up_queue.front() + i == (*it)->command && (*it)->type == UP)
+					(*it)->active = true;
+				++it;
+			}
+		}
+	}
+	//REPEAT
+	if (!App->input->repeat_queue.empty())
+	{
+		for (int i = 0; i < App->input->repeat_queue.size(); i++)
+		{
+			list<ShortCut*>::iterator it = shortcuts_list.begin();
+			while (it != shortcuts_list.end())
+			{
+				if (App->input->repeat_queue.front() + i == (*it)->command && (*it)->type == REPEAT)
+					(*it)->active = true;
+				++it;
+			}
+		}
+	}
 
 	return ret;
 }
@@ -69,19 +90,6 @@ bool InputManager::PreUpdate()
 bool InputManager::Update(float dt)
 {
 	bool ret = true;
-
-	//TODO: Save inputs inside queue
-	const Uint8* keys = SDL_GetKeyboardState(NULL);
-	
-	for (int i = 0; i < MAX_KEYS; i++)
-	{
-		if (keys[i] == 1)
-		{
-			SDL_Scancode state = (SDL_Scancode)i;
-
-			input_queue.push(SDL_GetScancodeName(state));
-		}
-	}
 
 	return ret;
 }

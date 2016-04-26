@@ -3,25 +3,25 @@
   <!-- COMMANDS MUST BE CAPS -->
   
   <shortcut>
-    <TYPE value = "DOWN"/>
+    <TYPE value = "REPEAT"/>
     <name value ="camera_right"/>
     <command value ="D"/>
   </shortcut>
 
   <shortcut>
-    <TYPE value = "DOWN"/>
+    <TYPE value = "REPEAT"/>
     <name value ="camera_left"/>
     <command value ="A"/>
   </shortcut>
 
   <shortcut>
-    <TYPE value = "DOWN"/>
+    <TYPE value = "REPEAT"/>
     <name value ="camera_up"/>
     <command value ="W"/>
   </shortcut>
 
   <shortcut>
-    <TYPE value = "DOWN"/>
+    <TYPE value = "REPEAT"/>
     <name value ="camera_down"/>
     <command value ="S"/>
   </shortcut>
