@@ -112,6 +112,9 @@ bool InputManager::CleanUp()
 
 	shortcuts_list.clear();
 
+	while (!input_queue.empty())
+		input_queue.pop();
+
 	return ret;
 }
 
@@ -121,12 +124,12 @@ bool InputManager::LoadShortcutsInfo()
 
 	//TODO: Load shortcuts info
 
-	pugi::xml_document	shortcuts_file;
-	pugi::xml_node		shortcut;
+	pugi::xml_document	inputs_data;
+	pugi::xml_node		node;
 
 	char* buf;
 	int size = App->fs->Load(inputs_file_path.c_str(), &buf);
-	pugi::xml_parse_result result = shortcuts_file.load_buffer(buf, size);
+	pugi::xml_parse_result result = inputs_data.load_buffer(buf, size);
 	RELEASE(buf);
 
 	if (result == NULL)
@@ -135,25 +138,25 @@ bool InputManager::LoadShortcutsInfo()
 		return false;
 	}
 	else
-		shortcut = shortcuts_file.child("inputs_data");
+		node = inputs_data.child("inputs_data");
 
-	for (shortcut = shortcut.child("shortcut"); shortcut && ret; shortcut = shortcut.next_sibling("shortcut"))
+	for (node = node.child("shortcut"); node && ret; node = node.next_sibling("shortcut"))
 	{
-		ShortCut* short_cut = new ShortCut();
+		ShortCut* shortcut = new ShortCut();
 
-		string type_tmp = shortcut.child("TYPE").attribute("value").as_string();
+		string type_tmp = node.child("TYPE").attribute("value").as_string();
 		if (type_tmp == "UP")
-			short_cut->type = UP;
+			shortcut->type = UP;
 		if (type_tmp == "DOWN")
-			short_cut->type = DOWN;
+			shortcut->type = DOWN;
 		if (type_tmp == "REPEAT")
-			short_cut->type = REPEAT;
+			shortcut->type = REPEAT;
 
-		short_cut->name = shortcut.child("name").attribute("value").as_string();
-		short_cut->command = shortcut.child("command").attribute("value").as_string();
-		short_cut->active = false;
+		shortcut->name = node.child("name").attribute("value").as_string();
+		shortcut->command = node.child("command").attribute("value").as_string();
+		shortcut->active = false;
 
-		shortcuts_list.push_back(short_cut);
+		shortcuts_list.push_back(shortcut);
 	}
 
 	return ret;

@@ -49,9 +49,12 @@ bool GameScene::Start()
 	debug = false;
 	game_paused = false;
 
-	//UI TESTS
-	App->ui->CreateImage({ 1, 396, 637, 192 }, 2, 290);
-	//
+	//TODO: Crear la UI que suporti l'estructura de Shortcuts
+	/*
+		- Window:
+			-Label + Button/inputbox * ShortCut
+			-If Button/inputbox enter -> Append attributes a l'xml
+	*/
 
 	return true;
 }
@@ -77,8 +80,22 @@ bool GameScene::Update(float dt)
 		game_paused = !game_paused;
 
 	//TODO: iterar i comprovar shortcut necessari
-	if (App->input_manager->shortcuts_list.front()->active)
-		App->render->camera.x -= 5;
+	list<ShortCut*>::iterator it = App->input_manager->shortcuts_list.begin();
+
+	while (it != App->input_manager->shortcuts_list.end())
+	{
+		if ((*it)->name == "camera_right" && (*it)->active)
+			App->render->camera.x -= 5;
+		if ((*it)->name == "camera_left" && (*it)->active)
+			App->render->camera.x += 5;
+		if ((*it)->name == "camera_down" && (*it)->active)
+			App->render->camera.y -= 5;
+		if ((*it)->name == "camera_up" && (*it)->active)
+			App->render->camera.y += 5;
+
+		++it;
+	}
+	
 
 	return true;
 }
