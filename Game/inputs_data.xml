@@ -9,13 +9,13 @@
   </shortcut>
 
   <shortcut>
-    <TYPE value = "REPEAT"/>
+    <TYPE value = "UP"/>
     <name value ="camera_left"/>
     <command value ="A"/>
   </shortcut>
 
   <shortcut>
-    <TYPE value = "REPEAT"/>
+    <TYPE value = "DOWN"/>
     <name value ="camera_up"/>
     <command value ="W"/>
   </shortcut>

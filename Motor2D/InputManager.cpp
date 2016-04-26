@@ -120,9 +120,6 @@ bool InputManager::CleanUp()
 
 	shortcuts_list.clear();
 
-	while (!input_queue.empty())
-		input_queue.pop();
-
 	return ret;
 }
 

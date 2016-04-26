@@ -223,6 +223,14 @@ bool j1Input::PreUpdate()
 bool j1Input::CleanUp()
 {
 	LOG("Quitting SDL event subsystem");
+
+	while (!down_queue.empty())
+		down_queue.pop();
+	while (!up_queue.empty())
+		up_queue.pop();
+	while (!repeat_queue.empty())
+		repeat_queue.pop();
+
 	SDL_QuitSubSystem(SDL_INIT_EVENTS);
 	return true;
 }
